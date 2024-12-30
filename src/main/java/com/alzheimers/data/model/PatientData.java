@@ -1,22 +1,23 @@
 package com.alzheimers.data.model;
 
 public class PatientData {
-    private int id;
+
+    private int diagnosis;
+    private int history;
     private int age;
     private int gender;
     private float physical_activity;
     private float bmi;
     
-    public PatientData(int id, int age, int gender, float physical_activity, float bmi) {
-        this.id = id;
+    public PatientData(int diagnosis, int history, int age, int gender, float physical_activity, float bmi) {
+        this.diagnosis = diagnosis;
+        this.history = history;
         this.age = age;
         this.gender = gender;
         this.physical_activity = physical_activity;
         this.bmi = bmi;
     }
-    public void setId(int id) {
-        this.id = id;
-    }
+
     public void setAge(int age) {
         this.age = age;
     }
@@ -30,10 +31,22 @@ public class PatientData {
         this.bmi = bmi;
     }
 
-    
-    public int getId() {
-        return id;
+    public void setHistory(int history) {
+        this.history = history;
     }
+
+    public void setDiagnosis(int diagnosis) {
+        this.diagnosis = diagnosis;
+    }
+
+    public int getHistory() {
+        return history;
+    }
+
+    public int getDiagnosis() {
+        return diagnosis;
+    }
+
     public int getAge() {
         return age;
     }

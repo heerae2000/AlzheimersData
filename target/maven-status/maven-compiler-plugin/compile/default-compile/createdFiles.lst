@@ -1,4 +1,4 @@
-com\alzheimers\data\cleaning\PatientDataCleaner.class
+com\alzheimers\data\analysis\PatientDataAnalysis.class
 com\alzheimers\data\model\PatientData.class
 com\alzheimers\data\App.class
 com\alzheimers\data\model\CSVReader.class

@@ -20,13 +20,14 @@ public class CSVReader {
             CSVParser csvParser = new CSVParser(reader, CSVFormat.DEFAULT.withHeader().withIgnoreHeaderCase().withTrim());
             
             for (CSVRecord record : csvParser) {
-                int id = Integer.parseInt(record.get("PatientID"));
+                int diagnosis = Integer.parseInt(record.get("Diagnosis"));
+                int history = Integer.parseInt(record.get("FamilyHistoryAlzheimers"));
                 int age = Integer.parseInt(record.get("Age"));
                 int gender = Integer.parseInt(record.get("Gender"));
                 float physical_activity = Float.parseFloat(record.get("PhysicalActivity"));
                 float bmi = Float.parseFloat(record.get("BMI"));
 
-                PatientData patient = new PatientData(id, age, gender, physical_activity, bmi);
+                PatientData patient = new PatientData(diagnosis, history, age, gender, physical_activity, bmi);
                 patientList.add(patient);
             }
 
