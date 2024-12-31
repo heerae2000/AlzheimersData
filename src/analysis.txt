@@ -1,0 +1,7 @@
+Interpretation for how physical activity affects alzheimers:
+After performing a t-test to compare patients with and without alzheimhers and their level
+of physical activity, we find the p-value to be statitistically insignificant (p > 0.05)
+telling us that physical activity is not a distinguising factor between patients with and 
+without alzheimers.
+
+

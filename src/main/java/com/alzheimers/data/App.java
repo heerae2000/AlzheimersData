@@ -10,11 +10,7 @@ public class App {
         String filePath = "alzheimers_disease_data.csv";
         List<PatientData> patientList = CSVReader.readCSV(filePath);
         double physicalActivityPValue = PatientDataAnalysis.tTestPhysicalActivity(patientList);
-        System.out.println("Diagnosis by Age Group: " + PatientDataAnalysis.diagnosisByAgeGroup(patientList));
-        System.out.println("Diagnosis by Gender: " + PatientDataAnalysis.diagnosisByGender(patientList));
-        System.out.println("Diagnosis by BMI: " + PatientDataAnalysis.diagnosisByBMIGroup(patientList));
         System.out.println("Diagnosis by Physical Activity: " + PatientDataAnalysis.diagnosisByPhysicalActivity(patientList));
         System.out.println("P-value for Physical Activity vs. Diagnosis: " + physicalActivityPValue);
-        System.out.println("Diagnosis by Family History: " + PatientDataAnalysis.diagnosisByFamilyHistory(patientList));
     }
 }
